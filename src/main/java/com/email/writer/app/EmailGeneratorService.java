@@ -78,6 +78,9 @@ public class EmailGeneratorService {
 
         prompt.append("Generate a professional email reply. ");
         prompt.append("Do not generate a subject line.\n\n");
+        prompt.append("Generate only the email body.\n");
+        prompt.append("Do not use placeholders such as [Name] or [Your Name].\n");
+        prompt.append("Use generic greetings and sign-offs.\n\n");
 
         if (emailRequest.getTone() != null &&
                 !emailRequest.getTone().isEmpty()) {
