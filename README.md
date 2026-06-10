@@ -15,9 +15,9 @@ generates personalized replies based on selected tone and custom instructions.
 
 ## Live Demo & Deployment
 
-Backend API (Render Deployment): https://ai-inbox-assistant-9c6d.onrender.com
-Frontend / Extension Demo (Vercel Deployment): https://ai-email-reply-generator-gamma.vercel.app
-GitHub Repository: https://github.com/pixelpilot007/AI-Inbox-Assistant.git
+- Backend API (Render Deployment): https://ai-inbox-assistant-9c6d.onrender.com
+- Frontend / Extension Demo (Vercel Deployment): https://ai-email-reply-generator-gamma.vercel.app
+- GitHub Repository: https://github.com/pixelpilot007/AI-Inbox-Assistant.git
 
 ## Features
 
@@ -173,9 +173,3 @@ npm run dev
 export GROQ_API_KEY=your_api_key
 ./mvnw spring-boot:run
 ```
-
-## Live Demo & Deployment
-
-Backend API (Render): https://your-render-app.onrender.com
-Frontend / Extension Demo (Vercel): https://your-vercel-app.vercel.app
-GitHub Repository: https://github.com/your-username/ai-inbox-assistant
