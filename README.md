@@ -2,6 +2,8 @@
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
+![REST API](https://img.shields.io/badge/API-RESTful-yellow)
+![AI Powered](https://img.shields.io/badge/AI-Powered-red)
 ![Groq](https://img.shields.io/badge/LLM-Groq-blue)
 ![Render](https://img.shields.io/badge/Backend-Render-purple)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-black)
