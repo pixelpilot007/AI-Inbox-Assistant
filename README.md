@@ -1,10 +1,10 @@
+# AI Inbox Assistant
+
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
 ![Groq](https://img.shields.io/badge/LLM-Groq-blue)
 ![Render](https://img.shields.io/badge/Backend-Render-purple)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-black)
-
-# AI Inbox Assistant
 
 An AIML-powered email reply generation system that leverages Large Language Models (LLMs) to generate
 context-aware, professional email responses. Built using Spring Boot, Groq's Llama 3.3 model, and a
