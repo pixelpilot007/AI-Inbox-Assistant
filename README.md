@@ -1,123 +1,179 @@
-# AI-Powered Email Management: Web Application and Browser Extension <img src="https://github.com/user-attachments/assets/671fc71c-3d65-4a2b-afca-8157b6bb2651" alt="Icon" width="20" height="20" style="border-radius: 50%;">
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
+![Groq](https://img.shields.io/badge/LLM-Groq-blue)
+![Render](https://img.shields.io/badge/Backend-Render-purple)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-black)
 
+# AI Inbox Assistant
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/70488be6-5b5c-4d4e-9329-b6f3becb0d11" alt="Image" style="width:50%; height:auto;">
-</p>
+An AIML-powered email reply generation system that leverages Large Language Models (LLMs) to generate
+context-aware, professional email responses. Built using Spring Boot, Groq's Llama 3.3 model, and a
+Chrome Extension interface, the application analyzes email content, understands user intent, and
+generates personalized replies based on selected tone and custom instructions.
 
+## Live Demo & Deployment
 
+Backend API (Render Deployment): https://ai-inbox-assistant-9c6d.onrender.com
+Frontend / Extension Demo (Vercel Deployment): https://ai-email-reply-generator-gamma.vercel.app
+GitHub Repository: https://github.com/pixelpilot007/AI-Inbox-Assistant.git
 
-[![Java Version](https://img.shields.io/badge/Java-17%2B-blue?style=flat-square)](https://www.java.com/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2%2B-brightgreen?style=flat-square)](https://spring.io/projects/spring-boot)
-[![API](https://img.shields.io/badge/API-RESTful-yellow?style=flat-square)](https://en.wikipedia.org/wiki/Representational_state_transfer)
-[![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square)](https://reactjs.org/)
-[![Extensions](https://img.shields.io/badge/Extensions-Custom-orange?style=flat-square)](https://developer.chrome.com/docs/extensions)
-[![Build Status](https://img.shields.io/badge/Build-Passing-pink?style=flat-square)](https://github.com/18-RAJAT/SpringAI-InboxAssistant/actions)
-[![Code Style](https://img.shields.io/badge/Code%20Style-Checkstyle-darkblue?style=flat-square)](https://checkstyle.sourceforge.io/)
+## Features
 
+- Generate AI-powered email replies
+- AI-generated email replies using Large Language Models (LLMs)
+- Context-aware response generation
+- Prompt-based customization using user instructions
+- Natural Language Understanding (NLU) for email context analysis
+- Multiple tone options (Formal, Casual, Professional, Friendly, etc.)
+- Email Classification (type detection)
+- Dark Mode support
+- Reply history tracking
+- PDF export
+- TXT export
+- Chrome Extension integration
+- Chart / Analytics Dashboard ()
+- Responsive React UI
+- AI-generated email replies using Groq LLM
+- Custom instructions support
+- REST API backend built with Spring Boot
+- Dockerized deployment
+- Cloud deployment on Render
 
+## AIML Concepts & Techniques Used
+- Generative AI for automated email reply generation
+- LLMs (Llama 3.3) for natural language understanding and generation
+- Prompt Engineering for controlling tone, style, and content
+- NLP for email context and intent analysis
+- Context-Aware Text Generation for relevant responses
+- Instruction-Based Prompting using user-defined requirements
+- Groq-Powered Inference for fast response generation
+- Human-AI Interaction Design through customizable reply controls
 
+## Tech Stack
 
-An intelligent email management system powered by Spring Boot and AI that helps you handle your inbox more efficiently through automated categorization, smart responses, and email analysis.
+### Frontend
+- Chrome Extension
+- JavaScript
+- HTML
+- CSS
 
-## Features ✨
+### Backend
+- Java 17
+- Spring Boot 3
+- Spring MVC
+- WebClient
+- RESTful APIs
+- Maven
 
-- **AI-Powered Email Responses**: Automatically generate context-aware email replies
-- **Smart Categorization**: Automatically classify emails into categories (Important, Spam, Social, etc.)
-- **Email Summarization**: Get concise summaries of long email threads
-- **Sentiment Analysis**: Detect the emotional tone of incoming emails
-- **Follow-up Reminders**: Automatic reminders for important unanswered emails
-- **Template Suggestions**: AI-generated email templates for common responses
+### Artificial Intelligence & Machine Learning
+- Generative AI
+- Natural Language Processing (NLP)
+- Prompt Engineering
+- Large Language Models (LLMs)
+- Context-Aware Text Generation
+- Groq API
+- Llama 3.3 70B Versatile
 
-## Tech Stack 🛠️
+### Deployment & DevOps
+- Docker
+- Render
+- Vercel (Frontend Hosting)
+- Git & GitHub
 
-- **Backend**: Spring Boot 3.2
-- **AI Integration**: Spring AI
-- **Email Processing**: JavaMail API
-- - **Natural Language Processing**: [![Gemini](https://img.shields.io/badge/Google%20Gemini-AI-orange?style=flat)](https://ai.google/get-started/gemini-ecosystem/)
-- **Database**:
-  - Development: [![H2 Database](https://img.shields.io/badge/Database-H2-brown?style=flat-square&logo=h2)](https://www.h2database.com/)
-  - Production: [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
-- - **API Documentation**: [![Gemini API](https://img.shields.io/badge/Google%20Gemini-API-purple?style=flat)](https://ai.google.dev/gemini-api/docs)
-- **Build Tool**: Maven
+## API Endpoint
 
-## Prerequisites 📋
+### Generate Email Reply
 
-- [![Java Version](https://img.shields.io/badge/Java-17%2B-blue?style=flat-square)](https://www.java.com/)
-- [![Maven Version](https://img.shields.io/badge/Maven-3.9%2B-C71A36?style=flat-square)](https://maven.apache.org/)
-- [![Gemini API Key](https://img.shields.io/badge/Google_Gemini-API_Key-FF6F00?style=flat-square)](https://ai.google.dev/gemini-api/docs/api-key)
-- [![Email Account Credentials](https://img.shields.io/badge/Email_Account-Credentials-0078D4?style=flat-square)](https://support.google.com/mail/answer/7126229?hl=en)
+- POST /api/email/generate
 
+### Request:
 
-## System Design 📊
-![System Design](https://github.com/user-attachments/assets/62ead8dd-838a-4b16-a037-a9a72d8b1cd0)
+{
+"emailContent": "I want to request leave for two days because of a family function.",
+"tone": "Professional",
+"instructions": "Keep it concise and polite"
+}
 
-## Installation & Setup ⚙️
+Response:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/18-RAJAT/SpringAI-InboxAssistant.git
-   cd SpringAI-InboxAssistant
-   ```
+TDear [Name],
 
-2. **Build the project**:
-   ```bash
-   mvn clean install
-   ```
+I have received your request for a two-day leave due to a family function. I will review your request and get back to you shortly. Please let me know if there's any additional information I need from you to facilitate the process.
 
-3. **Configure environment variables**:
-   - Create `application.yml` in `src/main/resources/`:
-   ```yaml
-   spring:
-      spring.application.name=email-writer
-      gemini.api.url=${GEMINI_URL}
-      gemini.api.key=${GEMINI_KEY}
-      server.port=9191
+Thank you for your understanding and I look forward to responding to your request soon.
 
-   ```
+Best regards,
+[Your Name]
 
-4. **Start the application**:
-   ```bash
-   mvn spring-boot:run
-   ```
-5. **Access API documentation**:  
-   [![Swagger UI](https://img.shields.io/badge/Swagger%20UI-YourColorCode?style=for-the-badge)](https://swagger.io/tools/swagger-ui/)
-   [![OpenAPI Spec](https://img.shields.io/badge/OpenAPI%20Spec-85EA2D?style=for-the-badge)](https://swagger.io/specification/)
+## Example API URL
+- https://ai-inbox-assistant-9c6d.onrender.com/api/email/generate
 
+## Project Architecture
 
-## Example API Request 🚀
+Chrome Extension
+↓
+Spring Boot REST API
+↓
+Prompt Engineering Layer
+↓
+Groq LLM API (Llama 3.3)
+↓
+AI-Generated Email Response
 
-```bash
-curl -X POST "http://localhost:9191/api/email/generate" \
--H "Content-Type: application/json" \
--d '{
-  "emailContent": "Hi, I'm following up on our meeting last week. When can we expect the project deliverables?",
-  "tone": "professional"
-}'
+## Deployment
+
+### Docker
+- docker build -t ai-inbox-assistant .
+- docker run -p 8080:8080 ai-inbox-assistant
+
+### Render
+- Connect GitHub repository
+- Configure environment variables
+- Deploy using Docker
+- Access deployed API endpoint
+
+## Challenges Solved
+
+- Migrated from Spring WebFlux to Spring MVC to eliminate blocking-call issues.
+- Dockerized the application for cloud deployment.
+- Managed secure API keys using environment variables.
+- Integrated Groq LLM for real-time email generation.
+
+## Future Enhancements
+- Gmail Compose Integration
+- Retrieval-Augmented Generation (RAG) for personalized responses
+- Multiple AI Models Support
+- Email Summarization using NLP
+- Sentiment Analysis for tone-aware replies
+- Reply Regeneration and Optimization
+- User Authentication
+- Fine-Tuned Domain-Specific Email Models
+
+## Environment Variables
+
+Backend requires:
+
+```env
+GROQ_API_KEY=your_groq_api_key
 ```
 
-## Key API Endpoints 📡
+## Run Frontend
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/email/generate` | POST | Generate AI-powered email responses |
-| `/api/email/categorize` | POST | Categorize incoming emails |
-| `/api/email/summarize` | POST | Summarize email threads |
-| `/api/email/analyze-sentiment` | POST | Perform sentiment analysis on email content |
-| `/api/email/schedule-followup` | POST | Schedule follow-up reminders |
+```bash
+cd email-writer-react
+npm install
+npm run dev
+```
 
-## Contributing 🤝
+## Run Backend
 
-Contributions are welcome! Please follow these steps:
+```bash
+export GROQ_API_KEY=your_api_key
+./mvnw spring-boot:run
+```
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
+## Live Demo & Deployment
 
-## Acknowledgements 😇
-
-- Spring AI team for the amazing AI integration capabilities
-- Gemini for their powerful language models
-- The Spring Boot community for continuous support and improvements
+Backend API (Render): https://your-render-app.onrender.com
+Frontend / Extension Demo (Vercel): https://your-vercel-app.vercel.app
+GitHub Repository: https://github.com/your-username/ai-inbox-assistant
