@@ -13,6 +13,18 @@ context-aware, professional email responses. Built using Spring Boot, Groq's Lla
 Chrome Extension interface, the application analyzes email content, understands user intent, and
 generates personalized replies based on selected tone and custom instructions.
 
+## 📸 Application Demo
+
+### AI Email Reply Generation
+
+The user provides:
+- Original email content
+- Custom instructions
+- Desired response tone
+<p align="center">
+  <img src="screenshots/email-reply-generator.png" alt="AI Email Reply Generator Demo" width="900">
+</p>
+
 ## Live Demo & Deployment
 
 - Backend API (Render Deployment): https://ai-inbox-assistant-9c6d.onrender.com
